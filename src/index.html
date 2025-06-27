@@ -16,7 +16,7 @@
             <li><a href="#features">Features</a></li>
             <li><a href="#media">Media</a></li>
         </ul>
-        <a href="#preorder" class="btn btn-primary">Pre-Order</a>
+        <a href="#preorder" id="preorder-btn" class="btn btn-primary">Pre-Order</a>
     </nav>
 
     <!-- Hero Section -->
@@ -170,13 +170,13 @@
     </footer>
 
     <script>
-    // Animation for screenshots on scroll up
     const images = document.querySelectorAll('.screenshot-animate');
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
           entry.target.classList.add('visible');
-          observer.unobserve(entry.target);
+        } else {
+          entry.target.classList.remove('visible');
         }
       });
     }, { threshold: 0.2 });
