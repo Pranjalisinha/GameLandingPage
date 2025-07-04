@@ -1,0 +1,80 @@
+# Site settings
+theme: jekyll-theme-leap-day
+title: "Nexus Horizon 2077"
+description: "Cyberpunk Gaming Landing Page - A modern, responsive gaming landing page with a cyberpunk aesthetic"
+author: "Pranjali Sinha"
+email: "your-email@example.com"
+
+# URL settings
+url: "https://pranjalisinha.github.io"
+baseurl: "/GameLandingPage"
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+permalink: pretty
+
+# Theme specific settings
+leap-day:
+  # Navigation
+  nav:
+    - title: "Home"
+      url: "/"
+    - title: "Features"
+      url: "/#features"
+    - title: "Media"
+      url: "/#media"
+    - title: "Pre-Order"
+      url: "/#preorder"
+
+  # Social links
+  social:
+    github: "Pranjalisinha"
+    twitter: "your-twitter-handle"
+    linkedin: "your-linkedin-profile"
+
+# Collections
+collections:
+  posts:
+    output: true
+    permalink: /:collection/:name/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+
+# Include files
+include:
+  - _pages
+  - _posts
+  - assets
+
+# SEO
+seo:
+  title: "Nexus Horizon 2077 - Cyberpunk Gaming Landing Page"
+  description: "Experience the future of gaming with our cyberpunk-themed landing page featuring smooth animations and responsive design."
+  keywords: "gaming, cyberpunk, landing page, responsive design, web development"
+  image: "assets/images/hero-bg.jpg"
+  url: "https://pranjalisinha.github.io/GameLandingPage"
+
+# Analytics (optional)
+google_analytics: "your-ga-tracking-id" 
